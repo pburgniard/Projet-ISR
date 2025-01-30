@@ -11,6 +11,7 @@ Fiche technique décrivant la totalité des paramétrages système
 
 *Configuration d'OPNsense*
 
+*Plan d'Adressage IP*
 
 ## Vue globale du projet :
 Création d'un reseaux semblable a celui d'une entreprises séparés et mises en place de différents services internes et externes.
@@ -53,10 +54,10 @@ Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
 ## Plan D'Adressage IP
 
 
-| 🖧 Réseaux |    🏷️ Gateway     |              📡 DHCP              |     |
-| :--------: | :----------------: | :-------------------------------: | :-: |
-|  **LAN**   | **192.168.1.1/24** |                 ❌                 |     |
-|  **DMZ**   | **192.168.3.1/24** |                 ❌                 |     |
-|  **CLT**   | **192.168.2.1/24** | **192.168.2.2 ➡️  192.168.2.254** |     |
+| 🖧 Réseaux |    🏷️ Gateway     |              📡 DHCP              |     
+| :--------: | :----------------: | :-------------------------------: | 
+|  **LAN**   | **192.168.1.1/24** |                 ❌                 |     
+|  **DMZ**   | **192.168.3.1/24** |                 ❌                 |     
+|  **CLT**   | **192.168.2.1/24** | **192.168.2.2 ➡️  192.168.2.254** |     
 
 
