@@ -40,13 +40,13 @@ Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
 
 ## Configuration des VMs :
 
-|  🚀 Système D'Exploitation   | 💾 RAM  | 💽 Taille Disque | 🌐 Réseaux |
-| :--------------------------: | :-----: | :--------------: | :--------: |
-| **Opnsense-*opnsense 23.7*** | **2GB** |     **32GB**     |            |
-|   **Linux1-*Debian 12.0***   | **4GB** |    **628MB**     |            |
-|   **Linux2-*Debian 12.0***   | **4GB** |    **628MB**     |            |
-|  **WindSERV-*Windows 11***   | **8GB** |     **32GB**     |            |
-|    **Wind1-*Windows 11***    | **4GB** |     **30GB**     |            |
+|  🚀 Système D'Exploitation   | 💾 RAM  | 💽 Taille Disque |  🌐 Réseaux  |
+| :--------------------------: | :-----: | :--------------: | :----------: |
+| **Opnsense-*opnsense 23.7*** | **2GB** |     **32GB**     |   **tous**   |
+|   **Linux1-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |
+|   **Linux2-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |
+|  **WindSERV-*Windows 11***   | **8GB** |     **32GB**     | **SERVEURS** |
+|    **Wind1-*Windows 11***    | **4GB** |     **30GB**     | **CLIENTS**  |
 
 
 
