@@ -92,5 +92,31 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 ## Configuration Linux 2:
 
 ### Service Docker:
+Le service est défini par le stack compose suivant
+
+```yaml
+version: '3.8'
+  
+services:
+
+	server1:
+		image: httpd:alpine
+		container_name: server1
+		ports:
+			- "8080:80"
+		volumes:
+			- ./server1:/usr/local/apache2/htdocs
+		restart: always
+
+	server2:
+		image: httpd:alpine
+		container_name: server2
+		ports:
+			- "8081:80"
+		volumes:
+			- ./server2:/usr/local/apache2/htdocs
+		restart: always
+
+```
 
 
