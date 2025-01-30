@@ -41,7 +41,7 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 
 ## Configuration des VMs :
 
-|  🚀 Système D'Exploitation   | 💾 RAM  | 💽 Taille Disque |  🌐 Réseaux  |              IP statique              |
+|  🚀 Système D'Exploitation   | 💾 RAM  | 💽 Taille Disque |  🌐 Réseaux  |              📌IP statique              |
 | :--------------------------: | :-----: | :--------------: | :----------: | :-----------------------------------: |
 | **Opnsense-*opnsense 23.7*** | **2GB** |     **32GB**     |   **tous**   | *DHCP + les gateway de chaque réseau* |
 |   **Linux1-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |             *192.168.3.2*             |
