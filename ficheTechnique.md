@@ -5,9 +5,9 @@ Fiche technique décrivant la totalité des paramétrages système
 
 
 ## Sommaire:
-Vue globale du projet
+*Vue globale du projet*
 
-Configuration des VMs
+*Configuration des VMs*
 
-Configuration d'OPNsense
+*Configuration d'OPNsense*
 ##
