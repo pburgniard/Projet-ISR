@@ -17,12 +17,15 @@ Création d'un reseaux semblable a celui d'une entreprises séparés et mises en
 Cette approche est souvent utilisés pour améliorer la sécurité des communications au seins d'une entreprise.
 Une fois l'installation effectué des servuces, il est necessaire de tester et validés que la configuration reseaux soit fonctionnelles et sécurisé.
 
+Lors de ce projet, nous travaillerons avec *Proxmox Virtual Environment* :
+Vpo
+
 Quelques abréviations afin de mieux comprendre :
 AD = Active Directory
 CLT = Client
 DHCP = Dynamic Host Configuration Protocol
 VMs = Virtuals Machines
-
+DMZ = Demilitarized Zone 
 
 Voici la liste des VMs nécessaires pour le bon fonctionnement du projet :
 
