@@ -22,11 +22,11 @@ Lors de ce projet, nous travaillerons avec *Proxmox Virtual Environment* :
 Vpo
 
 Quelques abréviations afin de mieux comprendre :
-AD = Active Directory
-CLT = Client
-DHCP = Dynamic Host Configuration Protocol
-VMs = Virtuals Machines
-DMZ = Demilitarized Zone 
+- AD = Active Directory
+- CLT = Client
+- DHCP = Dynamic Host Configuration Protocol
+- VMs = Virtuals Machines
+- DMZ = Demilitarized Zone 
 
 Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possible d'en ajouter si besoin):
 
