@@ -5,12 +5,13 @@ Fiche technique décrivant la totalité des paramétrages système
 
 
 ## Sommaire:
-*Vue globale du projet*
+- *Vue globale du projet*
 
-*Configuration des VMs*
+- *Configuration des VMs*
 
-*Configuration d'OPNsense*
+- *Configuration d'OPNsense*
 
+- *Plan d'Adressage IP*
 
 ## Vue globale du projet :
 Création d'un reseaux semblable a celui d'une entreprises séparés et mises en place de différents services internes et externes.
@@ -21,19 +22,19 @@ Lors de ce projet, nous travaillerons avec *Proxmox Virtual Environment* :
 Vpo
 
 Quelques abréviations afin de mieux comprendre :
-AD = Active Directory
-CLT = Client
-DHCP = Dynamic Host Configuration Protocol
-VMs = Virtuals Machines
-DMZ = Demilitarized Zone 
+- AD = Active Directory
+- CLT = Client
+- DHCP = Dynamic Host Configuration Protocol
+- VMs = Virtuals Machines
+- DMZ = Demilitarized Zone 
 
-Voici la liste des VMs nécessaires pour le bon fonctionnement du projet :
+Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possible d'en ajouter si besoin):
 
-OPNsense : Notre Firewall
-Windows Server : 
-Windows Client : Servant a etre le client de l'AD
-Server WEB : Permettant d'heberger notre site web (avec docker)
-Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
+- OPNsense : Notre Firewall
+- Windows Serveur : Controleur de domaine de l'AD, serveur DNS et serveur DHCP
+- Windows Client : Servant a etre le client de l'AD
+- Serveur WEB : Permettant d'heberger notre site web (avec docker)
+- Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
 
 
 
@@ -53,10 +54,10 @@ Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
 ## Plan D'Adressage IP
 
 
-| 🖧 Réseaux |    🏷️ Gateway     |              📡 DHCP              |     |
-| :--------: | :----------------: | :-------------------------------: | :-: |
-|  **LAN**   | **192.168.1.1/24** |                 ❌                 |     |
-|  **DMZ**   | **192.168.3.1/24** |                 ❌                 |     |
-|  **CLT**   | **192.168.2.1/24** | **192.168.2.2 ➡️  192.168.2.254** |     |
+| 🖧 Réseaux |    🏷️ Gateway     |              📡 DHCP              |     
+| :--------: | :----------------: | :-------------------------------: | 
+|  **LAN**   | **192.168.1.1/24** |                 ❌                 |     
+|  **DMZ**   | **192.168.3.1/24** |                 ❌                 |     
+|  **CLT**   | **192.168.2.1/24** | **192.168.2.2 ➡️  192.168.2.254** |     
 
 
