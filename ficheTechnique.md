@@ -28,7 +28,7 @@ DHCP = Dynamic Host Configuration Protocol
 VMs = Virtuals Machines
 DMZ = Demilitarized Zone 
 
-Voici la liste des VMs nécessaires pour le bon fonctionnement du projet :
+Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possible d'en ajouter si besoin):
 
 - OPNsense : Notre Firewall
 - Windows Serveur : Controleur de domaine de l'AD, serveur DNS et serveur DHCP
