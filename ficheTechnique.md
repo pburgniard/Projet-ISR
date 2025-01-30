@@ -30,11 +30,11 @@ DMZ = Demilitarized Zone
 
 Voici la liste des VMs nécessaires pour le bon fonctionnement du projet :
 
-OPNsense : Notre Firewall
-Windows Server : 
-Windows Client : Servant a etre le client de l'AD
-Server WEB : Permettant d'heberger notre site web (avec docker)
-Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
+- OPNsense : Notre Firewall
+- Windows Serveur : Controleur de domaine de l'AD, serveur DNS et serveur DHCP
+- Windows Client : Servant a etre le client de l'AD
+- Serveur WEB : Permettant d'heberger notre site web (avec docker)
+- Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
 
 
 
