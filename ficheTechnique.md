@@ -4,21 +4,24 @@ Fiche technique décrivant la totalité des paramétrages système
 <h4 style="color: gray;">Paul Burgniard - Merwan CHEHBI - Maxime GERARD - Malo BERGER - Taha CHAUDHRY</h4>
 
 ## Sommaire:
-- [[#Vue globale du projet :|Vue globale du projet :]]
-- [[#Configuration des VMs :|Configuration des VMs :]]
-- [[#Plan D'Adressage IP:|Plan D'Adressage IP:]]
-- [[#Configuration OPNsense:|Configuration OPNsense:]]
-	- [[#Configuration OPNsense:#Règles De Pare Feu:|Règles De Pare Feu:]]
-	- [[#Configuration OPNsense:#Services:|Services:]]
-- [[#Configuration Serveur Windows:|Configuration Serveur Windows:]]
-	- [[#Configuration Serveur Windows:#Services:|Services:]]
-		- [[#Services:#Active Directory:|Active Directory:]]
-		- [[#Services:#DNS:|DNS:]]
-		- [[#Services:#DHCP:|DHCP:]]
-- [[#Configuration Linux 1:|Configuration Linux 1:]]
-	- [[#Configuration Linux 1:#Service Reverse Proxy Nginx:|Service Reverse Proxy Nginx:]]
-- [[#Configuration Linux 2:|Configuration Linux 2:]]
-	- [[#Configuration Linux 2:#Service Docker:|Service Docker:]]
+
+- [Vue globale du projet :](#vue-globale-du-projet-)
+- [Configuration des VMs :](#configuration-des-vms-)
+- [Plan D'Adressage IP:](#plan-dadressage-ip)
+- [Configuration OPNsense:](#configuration-opnsense)
+	- [Règles De Pare Feu:](#r%C3%A8gles-de-pare-feu)
+	- [Services:](#services)
+- [Configuration Serveur Windows:](#configuration-serveur-windows)
+	- [Services:](#services)
+		- [Active Directory:](#active-directory)
+		- [DNS:](#dns)
+		- [DHCP:](#dhcp)
+- [Configuration Linux 1:](#configuration-linux-1)
+	- [Service Reverse Proxy Nginx:](#service-reverse-proxy-nginx)
+- [Configuration Linux 2:](#configuration-linux-2)
+	- [Service Docker:](#service-docker)
+
+
 
 
 ## Vue globale du projet :
