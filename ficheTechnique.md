@@ -10,7 +10,26 @@ Fiche technique décrivant la totalité des paramétrages système
 *Configuration des VMs*
 
 *Configuration d'OPNsense*
-##
+
+
+## Vue globale du projet :
+Création d'un reseaux semblable a celui d'une entreprises séparés et mises en place de différents services internes et externes.
+Cette approche est souvent utilisés pour améliorer la sécurité des communications au seins d'une entreprise.
+Une fois l'installation effectué des servuces, il est necessaire de tester et validés que la configuration reseaux soit fonctionnelles et sécurisé.
+
+
+Voici la liste des VMs nécessaires pour le bon fonctionnement du projet :
+
+OPNsense : Notre Firewall
+Windows Server :
+Windows Client :
+Server WEB : 
+Reverse Proxy : Servant de reverse proxy pour le Server WEB
+
+
+
+
+## Configuration des VMs :
 
 |             🚀 ISO            |             💾 RAM            |             💽 Taille disque   |             🌐 Cartes réseaux            |
 |------------------------------- |-------------------------------|----------------------------------------- |------------------------------------------|
@@ -26,8 +45,8 @@ Fiche technique décrivant la totalité des paramétrages système
 
 |             🖧 Réseaux            |             🏷️ Gateway            |            📡 DHCP    |   
 |------------------------------- |-------------------------------|----------------------------------------- |
-|           **LAN**         |           **192.168.1.1/24**        |          ❌              |                                          
-|           **DMZ**          |           **192.168.3.1/24**        |           ❌              |                                         
+|           **LAN**         |           **192.168.1.1/24**        |          ❌             |                                          
+|           **DMZ**          |           **192.168.3.1/24**        |          ❌              |                                         
 |           **CLT**          |           **192.168.2.1/24**        |           **192.168.2.2 ➡️  192.168.2.254**               |     
 
 
