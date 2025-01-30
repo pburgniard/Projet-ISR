@@ -10,7 +10,32 @@ Fiche technique décrivant la totalité des paramétrages système
 *Configuration des VMs*
 
 *Configuration d'OPNsense*
-## 
+
+
+## Vue globale du projet :
+Création d'un reseaux semblable a celui d'une entreprises séparés et mises en place de différents services internes et externes.
+Cette approche est souvent utilisés pour améliorer la sécurité des communications au seins d'une entreprise.
+Une fois l'installation effectué des servuces, il est necessaire de tester et validés que la configuration reseaux soit fonctionnelles et sécurisé.
+
+Quelques abréviations afin de mieux comprendre :
+AD = Active Directory
+CLT = Client
+DHCP = Dynamic Host Configuration Protocol
+VMs = Virtuals Machines
+
+
+Voici la liste des VMs nécessaires pour le bon fonctionnement du projet :
+
+OPNsense : Notre Firewall
+Windows Server : 
+Windows Client : Servant a etre le client de l'AD
+Server WEB : Permettant d'heberger notre site web (avec docker)
+Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
+
+
+
+
+## Configuration des VMs :
 
 |  🚀 Système D'Exploitation   | 💾 RAM  | 💽 Taille Disque | 🌐 Réseaux |
 | :--------------------------: | :-----: | :--------------: | :--------: |
