@@ -47,7 +47,7 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 |   **Linux1-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |             *192.168.3.2*             |
 |   **Linux2-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |             *192.168.3.3*             |
 |  **WindSERV-*Windows 11***   | **8GB** |     **32GB**     | **SERVEURS** |             *192.168.1.2*             |
-|    **Wind1-*Windows 11***    | **4GB** |     **30GB**     | **CLIENTS**  |                   ❌                   |
+|    **Wind1-*Windows 11***    | **4GB** |     **30GB**     | **CLIENT**  |                   ❌                   |
 
 
 
