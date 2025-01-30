@@ -5,13 +5,13 @@ Fiche technique décrivant la totalité des paramétrages système
 
 
 ## Sommaire:
-*Vue globale du projet*
+- *Vue globale du projet*
 
-*Configuration des VMs*
+- *Configuration des VMs*
 
-*Configuration d'OPNsense*
+- *Configuration d'OPNsense*
 
-*Plan d'Adressage IP*
+- *Plan d'Adressage IP*
 
 ## Vue globale du projet :
 Création d'un reseaux semblable a celui d'une entreprises séparés et mises en place de différents services internes et externes.
