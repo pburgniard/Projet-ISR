@@ -65,19 +65,27 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 
 ## Plan D'Adressage IP:
 
-| 🖧 Réseaux |    🏷️ Gateway     |              📡 DHCP              |
-| :--------: | :----------------: | :-------------------------------: |
-|  **LAN**   | **192.168.1.1/24** |                 ❌                 |
-|  **DMZ**   | **192.168.3.1/24** |                 ❌                 |
-| **CLIENT** | **192.168.2.1/24** | **192.168.2.2 ➡️  192.168.2.254** |
+|  🖧 Réseaux  |    🏷️ Gateway     |              📡 DHCP              |
+| :----------: | :----------------: | :-------------------------------: |
+| **SERVEURS** | **192.168.1.1/24** |                 ❌                 |
+|   **DMZ**    | **192.168.3.1/24** |                 ❌                 |
+|  **CLIENT**  | **192.168.2.1/24** | **192.168.2.2 ➡️  192.168.2.254** |
 
 ## Configuration OPNsense:
 
 ![[Capture d'écran 2025-01-30 101012.png]]
 ### Règles De Pare Feu:
 #### DMZ:
-#### SERVEURS
 
+| Source | Destination | Port | Description |
+| ------ | ----------- | ---- | ----------- |
+|        |             |      |             |
+
+#### SERVEURS:
+
+#### CLIENTS:
+
+#### WAN:
 
 ### Services:
 
