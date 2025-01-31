@@ -31,7 +31,7 @@ Cette approche est souvent utilisés pour améliorer la sécurité des communica
 Une fois l'installation effectué des services, il est nécessaire de tester et validés que la configuration réseaux soit fonctionnelles et sécurisé.
 
 Lors de ce projet, nous travaillerons avec *Proxmox Virtual Environment* :
-Vpo
+Cela nous permettra de faciliter la cooperation et l'installation des VMs.
 
 Quelques abréviations afin de mieux comprendre :
 - AD = Active Directory
@@ -88,6 +88,35 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 ## Configuration Linux 1:
 
 ### Service Reverse Proxy Nginx:
+
+```
+server{
+        listen 80;
+        server_name web1.FROMAGELAND.com;
+ 
+        location / {
+                proxy_pass http://192.168.3.3:8080;
+      proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+ 
+}
+ 
+server{
+        listen 80;
+        server_name web2.FROMAGELAND.com;
+ 
+        location / {
+                proxy_pass http://192.168.3.3:8081;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+ 
+}
+ 
+```
 
 ## Configuration Linux 2:
 
