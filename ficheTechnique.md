@@ -73,6 +73,7 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 
 ## Configuration OPNsense:
 
+![[Capture d'écran 2025-01-30 101012.png]]
 ### Règles De Pare Feu:
 
 ### Services:
