@@ -2,7 +2,6 @@
 
 Fiche technique décrivant la totalité des paramétrages système
 <h4 style="color: gray;">Paul Burgniard - Merwan CHEHBI - Maxime GERARD - Malo BERGER - Taha CHAUDHRY</h4>
-
 ## Sommaire:
 
 - [Vue globale du projet :](#vue-globale-du-projet-)
@@ -37,15 +36,15 @@ Quelques abréviations afin de mieux comprendre :
 - AD = Active Directory
 - CLT = Client
 - DHCP = Dynamic Host Configuration Protocol
-- VMs = Virtuals Machines
+- VMs = Virtual Machines
 - DMZ = Demilitarized Zone 
 
 Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possible d'en ajouter si besoin):
 
 - OPNsense : Notre Firewall
-- Windows Serveur : Controleur de domaine de l'AD, serveur DNS et serveur DHCP
-- Windows Client : Servant a etre le client de l'AD
-- Serveur WEB : Permettant d'heberger notre site web (avec docker)
+- Windows Serveur : Contrôleur de domaine de l'AD, serveur DNS et serveur DHCP
+- Windows Client : Servant a être le client de l'AD
+- Serveur WEB : Permettant d’héberger notre site web (avec docker)
 - Reverse Proxy : Servant de reverse proxy pour le Server WEB (avec nginx)
 
 
@@ -55,7 +54,7 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 
 |  🚀 Système D'Exploitation   | 💾 RAM  | 💽 Taille Disque |  🌐 Réseaux  |              📌IP statique              |
 | :--------------------------: | :-----: | :--------------: | :----------: | :-----------------------------------: |
-| **Opnsense-*opnsense 23.7*** | **2GB** |     **32GB**     |   **tous**   | *Les gateway de chaque réseau* |
+| **Opnsense-*Opnsense 23.7*** | **2GB** |     **32GB**     |   **tous**   | *Les gateway de chaque réseau* |
 |   **Linux1-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |             *192.168.3.2*             |
 |   **Linux2-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |             *192.168.3.3*             |
 |  **WindSERV-*Windows 11***   | **8GB** |     **32GB**     | **SERVEURS** |             *192.168.1.2*             |
@@ -89,7 +88,6 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 ## Configuration Linux 1:
 
 ### Service Reverse Proxy Nginx:
-
 ```nginx
 server{
         listen 80;
@@ -97,7 +95,7 @@ server{
  
         location / {
                 proxy_pass http://192.168.3.3:8080;
-      proxy_set_header Host $host;
+				proxy_set_header Host $host;
                 proxy_set_header X-Real-IP $remote_addr;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
@@ -114,11 +112,8 @@ server{
                 proxy_set_header X-Real-IP $remote_addr;
 	            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
- 
 }
- 
 ```
-
 ## Configuration Linux 2:
 
 ### Service Docker:
