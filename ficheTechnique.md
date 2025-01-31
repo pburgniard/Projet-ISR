@@ -26,7 +26,7 @@ Fiche technique décrivant la totalité des paramétrages système
 
 ## Vue globale du projet :
 
-Création d'un reseaux semblable a celui d'une entreprises séparés et mises en place de différents services internes et externes.
+Création d'un réseau semblable a celui d'une entreprises séparés et mises en place de différents services internes et externes.
 Cette approche est souvent utilisés pour améliorer la sécurité des communications au seins d'une entreprise.
 Une fois l'installation effectué des services, il est nécessaire de tester et validés que la configuration réseaux soit fonctionnelles et sécurisé.
 
@@ -76,16 +76,23 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 ![[Capture d'écran 2025-01-30 101012.png]]
 ### Règles De Pare Feu:
 #### DMZ:
-
-| Source | Destination | Port | Description |
-| ------ | ----------- | ---- | ----------- |
-|        |             |      |             |
+| Action | Source | Destination | Port | Description |
+| ------ | ------ | ----------- | ---- | ----------- |
+|        |        |             |      |             |
 
 #### SERVEURS:
-
+| Action | Source | Destination | Port | Description |
+| ------ | ------ | ----------- | ---- | ----------- |
+|        |        |             |      |             |
 #### CLIENTS:
+| Action | Source | Destination | Port | Description |
+| ------ | ------ | ----------- | ---- | ----------- |
+|        |        |             |      |             |
 
 #### WAN:
+| Action | Source | Destination | Port | Description |
+| ------ | ------ | ----------- | ---- | ----------- |
+|        |        |             |      |             |
 
 ### Services:
 
