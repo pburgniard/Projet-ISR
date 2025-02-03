@@ -98,7 +98,10 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 |        |        |             |      |             |
 
 ### Services:
-
+#### Relay DHCPv4:
+- Etat: Activé
+- Réseau: CLIENTS
+- Serveur: 192.168.1.2
 ## Configuration Serveur Windows:
 ### Services:
 #### Active Directory:
