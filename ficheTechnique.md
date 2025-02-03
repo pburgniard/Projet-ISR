@@ -26,12 +26,12 @@ Fiche technique décrivant la totalité des paramétrages système
 
 ## Vue globale du projet :
 
-Création d'un réseau semblable a celui d'une entreprises séparés et mises en place de différents services internes et externes.
-Cette approche est souvent utilisés pour améliorer la sécurité des communications au seins d'une entreprise.
-Une fois l'installation effectué des services, il est nécessaire de tester et validés que la configuration réseaux soit fonctionnelles et sécurisé.
+Création d'un réseau semblable à celui d'une entreprise séparée et mise en place de différents services internes et externes.
+Cette approche est souvent utilisée pour améliorer la sécurité des communications au sein d'une entreprise.
+Une fois l'installation effectuée des services, il est nécessaire de tester et de valider que la configuration réseau soit fonctionnelle et sécurisée.
 
 Lors de ce projet, nous travaillerons avec *Proxmox Virtual Environment* :
-Cela nous permettra de faciliter la cooperation et l'installation des VMs.
+Cela nous permettra de faciliter la coopération et l'installation des VMs.
 
 Quelques abréviations afin de mieux comprendre :
 - AD = Active Directory
@@ -40,7 +40,7 @@ Quelques abréviations afin de mieux comprendre :
 - VMs = Virtual Machines
 - DMZ = Demilitarized Zone 
 
-Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possible d'en ajouter si besoin):
+Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'en ajouter si besoin) :
 
 - OPNsense : Notre Firewall
 - Windows Serveur : Contrôleur de domaine de l'AD, serveur DNS et serveur DHCP
