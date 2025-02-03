@@ -29,7 +29,6 @@ Fiche technique décrivant la totalité des paramétrages système
 Création d'un réseau semblable à celui d'une entreprise séparée et mise en place de différents services internes et externes.
 
 Cette approche est souvent utilisée pour améliorer la sécurité des communications au sein d'une entreprise.
-
 Une fois l'installation effectuée des services, il est nécessaire de tester et de valider que la configuration réseau soit fonctionnelle et sécurisée.
 
 Lors de ce projet, nous travaillerons avec *Proxmox Virtual Environment* :
