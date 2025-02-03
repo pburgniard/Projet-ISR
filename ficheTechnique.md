@@ -72,8 +72,8 @@ Voici la liste des VMs nécessaires pour le bon fonctionnement du projet (possib
 |  **CLIENT**  | **192.168.2.1/24** | **192.168.2.2 ➡️  192.168.2.254** |
 
 ## Configuration OPNsense:
+![Capture d'écran 2025-01-30 101012](https://github.com/user-attachments/assets/e59201a1-327f-4823-beb9-d22534c5d563)
 
-![](Capture d'écran 2025-01-30 101012.png)
 ### Règles De Pare Feu:
 #### DMZ:
 | Action | Source | Destination | Port | Description |
