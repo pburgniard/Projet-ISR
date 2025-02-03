@@ -135,7 +135,7 @@ server{
 ## Configuration Linux 2:
 
 ### Service Docker:
-Le service est défini par le stack compose suivant
+Le service est défini par le stack compose suivant :
 
 ```yaml
 version: '3.8'
