@@ -107,8 +107,19 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 #### Active Directory:
 
 #### DNS:
+- Zone: FROMAGELAND.COM
+
+| Record | Valeur |
+|:------:|:------:|
+|        |        |
+
 
 #### DHCP:
+- plage: 192.168.2 - 192.168.254
+- masque: 255.255.255.0
+- gateway: 192.168.2.1
+- DNS: 192.168.1.2
+- ==A VERIFIER + COMPLETER==
 
 ## Configuration Linux 1:
 
