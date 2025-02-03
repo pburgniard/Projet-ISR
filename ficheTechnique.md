@@ -111,7 +111,7 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 
 | Record | Valeur |
 |:------:|:------:|
-|        |        |
+|   A    |        |
 
 
 #### DHCP:
