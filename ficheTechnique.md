@@ -109,9 +109,9 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 #### DNS:
 - Zone: FROMAGELAND.COM
 
-| Record | Valeur |
-|:------:|:------:|
-|   A    |        |
+| Record | Valeur |     |
+| :----: | :----: | :-: |
+|   A    |        |     |
 
 
 #### DHCP:
