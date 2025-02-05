@@ -102,7 +102,10 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 ## Configuration Serveur Windows:
 ### Services:
 #### Active Directory:
+##### GPO
 
+Un **GPO** (Group Policy Object) est un objet de strategies de groupes permettant d'automatiser une tache.
+Ce dernier est utilisé dans les environnements **Windows Server** afin de gérer et appliquer des configurations sur les ordinateurs et utilisateurs d'un domaine AD.
 #### DNS:
 
 #### DHCP:
@@ -164,5 +167,9 @@ services:
       - ./server2:/usr/local/apache2/htdocs
     restart: always
 ```
+
+## Ajout du GPO :
+
+Un **GPO** (Group Policy Object) est un objet de strategies de groupes permettant d'automatiser une tache.
 
 
