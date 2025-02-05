@@ -168,8 +168,6 @@ services:
     restart: always
 ```
 
-## Ajout du GPO :
 
-Un **GPO** (Group Policy Object) est un objet de strategies de groupes permettant d'automatiser une tache.
 
 
