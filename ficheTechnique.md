@@ -57,10 +57,10 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 |  🚀 Système D'Exploitation   | 💾 RAM  | 💽 Taille Disque |  🌐 Réseaux  |              📌IP statique              |
 | :--------------------------: | :-----: | :--------------: | :----------: | :-----------------------------------: |
 | **Opnsense-*Opnsense 23.7*** | **2GB** |     **32GB**     |   **tous**   | *Les gateway de chaque réseau* |
-|   **Linux1-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |             *192.168.3.2*             |
-|   **Linux2-*Debian 12.0***   | **4GB** |    **628MB**     |   **DMZ**    |             *192.168.3.3*             |
+|   **Linux1-*Debian 12.0***   | **2GB** |    **628MB**     |   **DMZ**    |             *192.168.3.2*             |
+|   **Linux2-*Debian 12.0***   | **2GB** |    **628MB**     |   **DMZ**    |             *192.168.3.3*             |
 |  **WindSERV-*Windows 11***   | **8GB** |     **32GB**     | **SERVEURS** |             *192.168.1.2*             |
-|    **Wind1-*Windows 11***    | **4GB** |     **30GB**     | **CLIENT**  |                   ❌                   |
+|    **Wind1-*Windows 11***    | **2GB** |     **30GB**     | **CLIENT**  |                   ❌                   |
 
 
 
