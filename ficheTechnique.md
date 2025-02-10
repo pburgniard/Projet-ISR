@@ -111,11 +111,17 @@ Ping Castle est un outil d'audit d'AD, permettant de scanner automatiquement de 
 
 **Vulnérabilités rencontrées et réglées** :
 Authentification par NTLMv1 autorisée : désactivée par un GPO.
+
 Les utilisateurs non administrateurs sont autorisés à ajouter des ordinateurs AD : désactivé par un GPO.
+
 LAPS non installé : installation et configuration de LAPS sur le serveur et le client.
+
 Spooler activé : désactivation du service "spooler".
+
 Mise en place d'une stratégie d'audit : activée par un GPO
+
 Le compte administrateur peut être délégué : désactivé dans les propriétés du compte administrateur.
+
 Endurcissement du chemin : activation par un GPO
 
 
