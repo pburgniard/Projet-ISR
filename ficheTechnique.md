@@ -116,7 +116,7 @@ Voici notre GPO : `Configuration_ordinateur/Strategies/Parametres_Windows/Parame
 
 | Record | Nom |   Adresse   |
 | :----: | :-: | :---------: |
-|   A    |  .  | 192.168.1.2 |
+|   A    |  @  | 192.168.1.2 |
 
 
 #### DHCP:
