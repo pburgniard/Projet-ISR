@@ -124,6 +124,8 @@ Authentification par NTLMv1 autorisée : désactivée par un GPO.
 
 - Endurcissement du chemin : activation par un GPO
 
+- Utilisateurs dans le groupe Administrateurs Schéma : Utilisateurs retirés 
+
 
 
 
