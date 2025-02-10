@@ -116,6 +116,8 @@ LAPS non installé : installation et configuration de LAPS sur le serveur et le 
 Spooler activé : désactivation du service "spooler".
 Mise en place d'une stratégie d'audit : activée par un GPO
 Le compte administrateur peut être délégué : désactivé dans les propriétés du compte administrateur.
+Endurcissement du chemin : activation par un GPO
+
 
 
 
