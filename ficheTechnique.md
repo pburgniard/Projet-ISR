@@ -109,8 +109,13 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 
 Ping Castle est un outil d'audit d'AD, permettant de scanner automatiquement de multitudes de vulnérabilités et d'ensuite noter la sécurité de notre système selon un score de 0 à 100.
 
-Vulnérabilités rencontrées et réglées :
-Authentification par NTLMv1 autorisée : désactivée par une GPO.
+**Vulnérabilités rencontrées et réglées** :
+Authentification par NTLMv1 autorisée : désactivée par un GPO.
+Les utilisateurs non administrateurs sont autorisés à ajouter des ordinateurs AD : désactivé par un GPO.
+LAPS non installé : installation et configuration de LAPS sur le serveur et le client.
+Spooler activé : désactivation du service "spooler".
+Mise en place d'une stratégie d'audit : activée par un GPO
+Le compte administrateur peut être délégué : désactivé dans les propriétés du compte administrateur.
 
 
 
