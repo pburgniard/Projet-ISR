@@ -105,6 +105,15 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 ## Configuration Serveur Windows:
 ### Services:
 #### Active Directory:
+##### Ping Castle
+
+Ping Castle est un outil d'audit d'AD, permettant de scanner automatiquement de multitudes de vulnérabilités et d'ensuite noter la sécurité de notre système selon un score de 0 à 100.
+
+Vulnérabilités rencontrées et réglées :
+Authentification par NTLMv1 autorisée : désactivée par une GPO.
+
+
+
 ##### GPO
 
 Un **GPO** (Group Policy Object) est un objet de strategies de groupes permettant d'automatiser une tache.
