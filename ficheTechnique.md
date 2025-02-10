@@ -126,6 +126,8 @@ Authentification par NTLMv1 autorisée : désactivée par un GPO.
 
 - Utilisateurs dans le groupe Administrateurs Schéma : Utilisateurs retirés 
 
+- Sous réseau non déclaré dans l'outil site: déclaration dans l'outil site
+
 
 
 
