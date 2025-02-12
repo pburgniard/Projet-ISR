@@ -4,23 +4,30 @@ Fiche technique décrivant la totalité des paramétrages système
 <h4 style="color: gray;">Paul BURGNIARD - Merwan CHEHBI - Maxime GERARD - Malo BERGER - Taha CHAUDHRY</h4>
 
 ## Sommaire:
-
 - [Vue globale du projet :](#vue-globale-du-projet-)
 - [Configuration des VMs :](#configuration-des-vms-)
 - [Plan D'Adressage IP:](#plan-dadressage-ip)
 - [Configuration OPNsense:](#configuration-opnsense)
 	- [Règles De Pare Feu:](#r%C3%A8gles-de-pare-feu)
+		- [DMZ:](#dmz)
+		- [SERVEURS:](#serveurs)
+		- [CLIENTS:](#clients)
+		- [WAN:](#wan)
+	- [NAT](#nat)
 	- [Services:](#services)
+		- [Relay DHCPv4:](#relay-dhcpv4)
 - [Configuration Serveur Windows:](#configuration-serveur-windows)
+	- [Script Powershell](#script-powershell)
 	- [Services:](#services)
 		- [Active Directory:](#active-directory)
+			- [Ping Castle](#ping-castle)
+			- [GPO](#gpo)
 		- [DNS:](#dns)
 		- [DHCP:](#dhcp)
 - [Configuration Linux 1:](#configuration-linux-1)
 	- [Service Reverse Proxy Nginx:](#service-reverse-proxy-nginx)
 - [Configuration Linux 2:](#configuration-linux-2)
 	- [Service Docker:](#service-docker)
-
 
 
 
