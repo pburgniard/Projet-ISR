@@ -81,13 +81,14 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 
 ### Règles De Pare Feu:
 #### DMZ:
-| Action | Source | Destination | Port | Description |
-|:------:|:------:|:-----------:| ---- | ----------- |
-|        |        |             |      |             |
+| Action | Source  | Protocol |   Destination   | Port |  Description   |
+| :----: | :-----: | :------: | :-------------: | :--: | :------------: |
+|  Pass  | DMZ net |    *     | !192.168.0.0/16 |  *   | Allow internet |
+
 #### SERVEURS:
-| Action |    Source    | Destination | Port | Description  |
-|:------:|:------------:|:-----------:|:----:|:------------:|
-|  Pass  | SERVEURS net |      *      |  *   | Allow To any |
+| Action |    Source    | Port | Destination | Port | Description  |
+| :----: | :----------: | :--: | :---------: | :--: | :----------: |
+|  Pass  | SERVEURS net |  *   |      *      |  *   | Allow To any |
 
 #### CLIENTS:
 | Action |    Source    | Protocol |   Destination   |                     Port                     |         Description         |
@@ -150,9 +151,11 @@ Voici notre GPO : `Configuration_ordinateur/Strategies/Parametres_Windows/Parame
 #### DNS:
 - Zone: FROMAGELAND.COM
 
-| Record | Nom |   Adresse   |
-| :----: | :-: | :---------: |
-|   A    |  @  | 192.168.1.2 |
+| Record | Nom  |   Adresse   |
+| :----: | :--: | :---------: |
+|   A    |  @   | 192.168.1.2 |
+|   A    | web1 | 192.168.3.2 |
+|   A    | web2 | 192.168.3.2 |
 
 
 #### DHCP:
