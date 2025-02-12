@@ -114,6 +114,61 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 - Réseau: CLIENTS
 - Serveur: 192.168.1.2
 ## Configuration Serveur Windows:
+### Script Powershell
+Ce script permets d'automatiser la création de nouveaux utilisateurs
+```powershell
+Add-Type -AssemblyName System.Web
+
+$CSVData = Import-Csv -Encoding UTF8 -Path ./Users.csv
+
+$Output = @()
+
+foreach($Line in $CSVData){
+
+    $SamAccountName = ($Line.Prénom.Substring(0,1) + $Line.Nom)
+
+    if( -not (Get-ADUser -Filter "SamAccountName -eq '$SamAccountName'" -ErrorAction SilentlyContinue)){
+
+        $Password = [System.Web.Security.Membership]::GeneratePassword(12,3)
+
+        $Userparams = @{
+
+            Name = ($Line.Prénom + " " + $Line.Nom)
+
+            GivenName = $Line.Prénom
+
+            Surname = $Line.Nom
+
+            SamAccountName = $SamAccountName
+
+            UserPrincipalName = ($Line.Prénom.Substring(0,1) + $Line.Nom + "@fromageland.com")
+
+            Path = "OU=Employes,DC=FROMAGELAND,DC=COM"
+
+            AccountPassword = (ConvertTo-SecureString -AsPlainText -Force $Password)
+
+            ChangePasswordAtLogon = $true
+
+            Enabled = $true
+
+        }
+
+        New-ADUser @Userparams
+
+        $Output += [PSCustomObject]@{
+
+            Login=($Line.Prénom.Substring(0,1) + $Line.Nom)
+
+            Password=$Password
+
+        }
+
+    }
+
+}
+
+$Output | Out-String | Add-Content Output.txt
+```
 ### Services:
 #### Active Directory:
 ##### Ping Castle
