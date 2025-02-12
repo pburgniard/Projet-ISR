@@ -89,20 +89,21 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 | ------ | ------ | ----------- | ---- | ----------- |
 |        |        |             |      |             |
 #### CLIENTS:
-| Action | Source | Destination | Port | Description |
-| ------ | ------ | ----------- | ---- | ----------- |
-|        |        |             |      |             |
+| Action | Source      | Destination | Port | Description |
+| ------ | ----------- | ----------- | ---- | ----------- |
+| Pass   | Clients net | 192.168.1.2 |      | Active D    |
+
 
 #### WAN:
 | Action | Source | Destination | Port | Description |
-| ------ | ------ | ----------- | ---- | ----------- |
+| ------ | ------ | ----------- |:----:| ----------- |
 |        |        |             |      |             |
 
 ### NAT
 
-| Interface | Protocol | Destination Address | Destination  |
-| --------- | -------- | ------------------- | ------------ |
-| WAN       | TCP      |                     |              |
+| Interface | Protocol | Destination Address | Destination Port |   NAT IP   | NAT Port |
+|:---------:|:--------:|:-------------------:|:----------------:|:----------:|:--------:|
+|    WAN    |   TCP    |     192.168.3.2     |        80        | 10.1.91.33 |    80    |
 
 ### Services:
 #### Relay DHCPv4:
