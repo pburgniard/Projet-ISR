@@ -72,8 +72,9 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 |   **DMZ**    | **192.168.3.1/24** |                 ❌                 |
 |  **CLIENT**  | **192.168.2.1/24** | **192.168.2.2 ➡️  192.168.2.254** |
 
+![serveur drawio (1)](https://github.com/user-attachments/assets/c9349053-0390-4b7d-b49c-03abfe65890e)
 
-![serveur drawio](https://github.com/user-attachments/assets/84554b0b-5cf1-45f4-9b9b-7169a89694a0)
+
 
 ## Configuration OPNsense:
 ![Capture d'écran 2025-01-30 101012](https://github.com/user-attachments/assets/e59201a1-327f-4823-beb9-d22534c5d563)
