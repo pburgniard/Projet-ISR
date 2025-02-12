@@ -89,9 +89,10 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 | ------ | ------ | ----------- | ---- | ----------- |
 |        |        |             |      |             |
 #### CLIENTS:
-| Action | Source      | Destination | Port | Description |
-| ------ | ----------- | ----------- | ---- | ----------- |
-| Pass   | Clients net | 192.168.1.2 |      | Active D    |
+| Action |   Source    | Protocol | Destination |                     Port                     |   Description    |
+|:------:|:-----------:|:--------:|:-----------:|:--------------------------------------------:|:----------------:|
+|  Pass  | Clients net |   TCP    | 192.168.1.2 | 53, 88, 135, 389, 445, 636, 5722, 1024:65535 | Active Directory |
+|        |             |          |             |                                              |                  |
 
 
 #### WAN:
