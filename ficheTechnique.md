@@ -82,24 +82,24 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 ### Règles De Pare Feu:
 #### DMZ:
 | Action | Source | Destination | Port | Description |
-| ------ | ------ | ----------- | ---- | ----------- |
+|:------:|:------:|:-----------:| ---- | ----------- |
 |        |        |             |      |             |
 #### SERVEURS:
-| Action | Source | Destination | Port | Description |
-| ------ | ------ | ----------- | ---- | ----------- |
-|        |        |             |      |             |
+| Action |    Source    | Destination | Port | Description  |
+|:------:|:------------:|:-----------:|:----:|:------------:|
+|  Pass  | SERVEURS net |      *      |  *   | Allow To any |
+
 #### CLIENTS:
-| Action |    Source    | Protocol | Destination |                     Port                     |   Description    |
-| :----: | :----------: | :------: | :---------: | :------------------------------------------: | :--------------: |
-|  Pass  | CLIIENTS net |   TCP    | 192.168.1.2 | 53, 88, 135, 389, 445, 636, 5722, 1024:65535 | Active Directory |
-|  Pass  | CLIENTS net  |   UDP    | 192.168.1.2 |            53, 88, 123, 389 5722             | Active Directory |
-|  Pass  | CLIENTS net  |   TCP    |  192.168.   |                                              |                  |
+| Action |    Source    | Protocol |   Destination   |                     Port                     |         Description         |
+| :----: | :----------: | :------: | :-------------: | :------------------------------------------: | :-------------------------: |
+|  Pass  | CLIIENTS net |   TCP    |   192.168.1.2   | 53, 88, 135, 389, 445, 636, 5722, 1024:65535 |      Active Directory       |
+|  Pass  | CLIENTS net  |   UDP    |   192.168.1.2   |            53, 88, 123, 389 5722             |      Active Directory       |
+|  Pass  | CLIENTS net  |   TCP    |   192.168.3.2   |                      80                      | Allow HTTP to Reverse Proxy |
+|  Pass  | CLIENTS net  |    *     | !192.168.0.0/16 |                      *                       |       Allow internet        |
 
 
 #### WAN:
-| Action | Source | Destination | Port | Description |
-| ------ | ------ | ----------- |:----:| ----------- |
-|        |        |             |      |             |
+- Aucune règle
 
 ### NAT
 
