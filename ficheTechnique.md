@@ -98,6 +98,12 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 | ------ | ------ | ----------- | ---- | ----------- |
 |        |        |             |      |             |
 
+### NAT
+
+| Interface | Protocol | Destination Address | Destination  |
+| --------- | -------- | ------------------- | ------------ |
+| WAN       | TCP      |                     |              |
+
 ### Services:
 #### Relay DHCPv4:
 - Etat: Activé
