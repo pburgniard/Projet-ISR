@@ -149,7 +149,7 @@ Ce dernier est utilisé dans les environnements **Windows Server** afin de gére
 
 Voici notre GPO : `Configuration_ordinateur/Strategies/Parametres_Windows/Parametres_de_Securite/Strategies_locales/Comptes/Etat de compte administrateur= désactivé`
 #### DNS:
-- Zone: FROMAGELAND.COM
+- Zone: FROMAGELAND.com
 
 | Record | Nom  |   Adresse   |
 | :----: | :--: | :---------: |
@@ -159,10 +159,11 @@ Voici notre GPO : `Configuration_ordinateur/Strategies/Parametres_Windows/Parame
 
 
 #### DHCP:
-- plage: 192.168.2 - 192.168.254
-- masque: 255.255.255.0
-- gateway: 192.168.2.1
+- Plage: 192.168.2.2 - 192.168.2.254
+- Masque: 255.255.255.0
+- Gateway: 192.168.2.1
 - DNS: 192.168.1.2
+- Nom DNS: FROMAGELAND.com
 
 ## Configuration Linux 1:
 
