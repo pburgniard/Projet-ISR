@@ -89,10 +89,11 @@ Voici la liste des VMs nécessaires au bon fonctionnement du projet (possible d'
 | ------ | ------ | ----------- | ---- | ----------- |
 |        |        |             |      |             |
 #### CLIENTS:
-| Action |   Source    | Protocol | Destination |                     Port                     |   Description    |
-|:------:|:-----------:|:--------:|:-----------:|:--------------------------------------------:|:----------------:|
-|  Pass  | Clients net |   TCP    | 192.168.1.2 | 53, 88, 135, 389, 445, 636, 5722, 1024:65535 | Active Directory |
-|        |             |          |             |                                              |                  |
+| Action |    Source    | Protocol | Destination |                     Port                     |   Description    |
+| :----: | :----------: | :------: | :---------: | :------------------------------------------: | :--------------: |
+|  Pass  | CLIIENTS net |   TCP    | 192.168.1.2 | 53, 88, 135, 389, 445, 636, 5722, 1024:65535 | Active Directory |
+|  Pass  | CLIENTS net  |   UDP    | 192.168.1.2 |            53, 88, 123, 389 5722             | Active Directory |
+|  Pass  | CLIENTS net  |   TCP    |  192.168.   |                                              |                  |
 
 
 #### WAN:
@@ -159,7 +160,6 @@ Voici notre GPO : `Configuration_ordinateur/Strategies/Parametres_Windows/Parame
 - masque: 255.255.255.0
 - gateway: 192.168.2.1
 - DNS: 192.168.1.2
-- ==A VERIFIER + COMPLETER==
 
 ## Configuration Linux 1:
 
